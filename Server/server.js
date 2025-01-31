@@ -20,13 +20,22 @@ app.get('./Contact', (req, res) => {
 app.get('/login', (req,res) => {
     res.send ("This is the login page")
 })
+//Signup Page
+app.get('/signup', (req, res) => {
+    res.send("Welcome to the Signup Page")
+})
 
 //404 Page
 app.get('*', (req, res) => {
     res.send("404 Page not Found")
+})
+//Adverts page
+app.get('adverts', (req,res) => {
+    res.send("This is the advert page")
 })
 
 //Start a server on port 3000
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
 })
+
