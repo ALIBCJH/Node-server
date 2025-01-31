@@ -16,6 +16,10 @@ app.get('/about', (req, res) => {
 app.get('./Contact', (req, res) => {
     res.send("This is the contact page running on port 3000")
 })
+//Login Page
+app.get('/login', (req,res) => {
+    res.send ("This is the login page")
+})
 
 //404 Page
 app.get('*', (req, res) => {
