@@ -24,6 +24,10 @@ app.get('/login', (req,res) => {
 app.get('/signup', (req, res) => {
     res.send("Welcome to the Signup Page")
 })
+//Profile Page
+app.get('/profile', (req, res) => {
+    res.send("This is the profile page")
+})
 
 //404 Page
 app.get('*', (req, res) => {
