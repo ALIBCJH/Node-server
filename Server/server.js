@@ -20,6 +20,10 @@ app.get('./Contact', (req, res) => {
 app.get('/login', (req,res) => {
     res.send ("This is the login page")
 })
+//Signup Page
+app.get('/signup',(req, res) => {
+    res.send("This is the signup page")
+})
 
 //404 Page
 app.get('*', (req, res) => {
@@ -30,3 +34,6 @@ app.get('*', (req, res) => {
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
 })
+
+//Error handling is important only when you are loadind data from the databaseor you are doing Asynchronous operations.
+
