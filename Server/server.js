@@ -33,6 +33,10 @@ app.get('*', (req, res) => {
 app.get('adverts', (req,res) => {
     res.send("This is the advert page")
 })
+//Sign Up Page
+app.get('/signup' , (req, res) => {
+    res.send("This is the signup page");
+})
 
 //Start a server on port 3000
 app.listen(port, () => {
